@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500&display=swap');
+
+:root{
+    --bgColor: #F75903;
+    --headingColor: #171717;
+    --contentColor: #171717;
+    --headingFont: 'Oswald', 'Helvetica', sans-serif;
+    --bodyFont: 'Montserrat', 'Arial', sans-serif;
+}
+
+body{
+	font-family: var(--bodyFont);
+	font-size: 14px;
+	color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headingFont);
+    color: var(--headingColor);
+}
+
+.bg-orange{
+    background-color: var(--bgColor);
+}
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content h2{
+    font-size: 3rem;
+}
+
+.hero-content p{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-content h2{
+        font-size: 3.5rem;
+    }
+    
+    .hero-content p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero-content h2{
+        font-size: 6rem;
+    }
+    
+    .hero-content p{
+        font-size: 2rem;
+    }
+}
+
+.mambu{
+    width: 100%;
+    height: 50vh;
+    background-image: url("../img/mambu-case-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.mambu .content-mambu{
+    border-top: 5px solid var(--bgColor);
+}
+
+.mambu img{
+    width: 250px;
+}
+
+.mambu .content-mambu h2{
+    color: var(--bgColor);
+    font-size: 1.7rem;
+}
+
+.mambu .content-mambu h4{
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color: #171717;
+    color: white
+}
+
+footer img{
+    width: 120px;
+}
+footer h2{
+    font-size: 1.4rem;
+}
+
+.header-area.sticky {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+.header-area.sticky .navbar-default{
+	background-color: #884bdf;
+}
+
